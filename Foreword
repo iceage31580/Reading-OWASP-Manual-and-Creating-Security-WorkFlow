@@ -1,0 +1,47 @@
+https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Testing_Guide_v4.pdf 
+
+Foreword by Eoin Keary, OWASP board
+
+  The problem of inscure software is perhaps the most important technical challenge of our time. 
+
+  A world without some minimal standards in terms of engineering and technology is a world in chaos. 
+
+  We can't hack ourselves secure and we only have a limited time to test and defend where an attacker does not have such constraints. 
+
+  In conjuction with other OWASP projects such the Code review Guide, the Developmment Guide and tools such as OWASP ZAP, this is great start towards building and maintaining secure applications. 
+
+Why OWASP?
+
+  There are many ways different ways to test for security flaws and this guide captures the consensus of the leading experts on how to perform this testing quickly, accurately, and efficently. 
+
+  Security should not be a black art or closed secret that only a few can practice. 
+
+  The initial responsiblity for application security must fall on the shoulders of the developers, they write the code. 
+
+  By adopting the wiki approach, the OWASP community can evolve and expand the information int his guide to keep pace with the fast moving application security threat landscape. 
+
+  The guide is a great testament to the passiong and energy the members and project volunteers have for the subject. 
+
+  In general there are several different roles within organizations that may use this guide: 
+
+    Developers
+    Software testers and QA
+    Security Specialists
+    Project Managers
+
+  There are infininite number of possible wats that  an application could fail and organizations have limited testing time and resources. 
+
+  This guide is best viewed as a set of techniques that you can use to find different types of security holes. 
+
+The Role of Automated tools
+
+  As Michael Howard put it at the 2006 OWASP AppSec conference in seattle, "Tools do not make software secure! They help the process abd help enforce policy".
+
+  Mostly importantly, these tools are generic, meaning tha they are not designed for custom code. 
+
+  While running tools doesn't take much time, each of the potential problems takes time to investigaate and verify. 
+
+Call to Action
+
+  This is a great roadmap for testing the most common issues facing applications today, but it is not exhaustive. 
+
