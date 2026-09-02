@@ -1,0 +1,24 @@
+The OWASP Tesing Project has been in development for many years. 
+
+The aim of the project is to help people understand the the what, why, where, and how of testing web applications. 
+
+  The OWASP Testing Guide provides flexible security-testing guidance and promotes integrating 
+  throughout the software development life cycle instead of relying only on penetration testing. 
+
+  The OWASP testing framework, validated by industry experts(while not everyone has agreed) helps 
+  organizations build secure software while impriving security culture through practical guidance, 
+  education, consensus, and experience.
+
+  The rest of this guide is organized as follows: 
+  The introduction covers the pre-requisites of testing web applications and the scope of testing. 
+  The OWASP Testing Framework and explanation of its techniques and tasks in relation to the 
+  various phases of software development life cycle. 
+  This is followed by how to test for specific vulnerabilities. 
+
+Measuring Security: the Economics of Insecure Software
+
+  A basic tenet of software enginering is that you can't control what you can't measure. 
+  [1] Security testing is no different. Unfortunately, measuring security is a notoriously 
+  difficult process. 
+
+  
