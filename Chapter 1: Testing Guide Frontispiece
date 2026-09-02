@@ -1,3 +1,13 @@
 Open and collaborative knowledge: that is the OWASP way
 
 [1] This version of the testing guide integrates with the other two flagship OWASP documentation programs. 
+
+[2] All chapters have been improved and test cases expanded to 87(64 test cases in v3) including the the introduction of four new chapters and controls: 
+
+  Identity Management Testing
+  Error Handling
+  Cryptography
+  Client Side Testing
+
+[3] This version of the testing guide encourarges teh community not simply accept the test cases outline in this guide. 
+
