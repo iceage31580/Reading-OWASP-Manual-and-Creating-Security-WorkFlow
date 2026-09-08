@@ -21,4 +21,31 @@ Measuring Security: the Economics of Insecure Software
   [1] Security testing is no different. Unfortunately, measuring security is a notoriously 
   difficult process. 
 
+  One aspect that should be emphasized is that security measurements are about both the specific 
+  technical issues (e.g. how prevalent a certain vulnerability is) and how these issues affect the 
+  economics of software. Most technical people will at least understand the basic issues, or they 
+  have a deeper understanding of the vulnerabilities. Sadly, few are able to translate that 
+  technical knowledge into monetary terms and quantify the potential cost of vulnerabilities to 
+  the application owner's business. Until this happens, CIO's will not be able to develop an 
+  accurate return on security investment and, subsequently, assign appropriate budgets for security software. 
+
+  While estimating the cost of insecure softwaare may appear a daunting task, there has been a significant amount of work in this direction. 
+
+  For example, in June 2002, the US National Institute of Standards (NIST) published a survey on the cost of insecure software to the US economy due to inadequate software testing. Interestingly, they estimate that a better testing infrastructure would save more than a third of these costs, or about $22 billion a  year. More recently, the links between economics and security have been studied by academic researchers. 
+
+What is Testing? 
+
+During the development life cycle of a web application many things need to be tested, but what does testing actually mean? 
+
+The Merriam-Webster dictionary describes testing as: 
+
+  To put it test or proof
+  To undergo a test
+  To be assigned a standing or evaluation based on tests
+
+For the purpose of this document testing is a process of comparing the state of a system or application against a set of criteria. In the security industry people frequently test against a set of mental criteria that are neither well defined nor complete. The aim of this document is to change the perception and make it easier for people without in-depth security knowledge to make a difference in testing. 
+
+Why Perform Testing?
+
+This document is designed to help organizations understand what compromises a testing program, and to help identify the steps that need to be undertakend to build and operate a testing program on web applications. The guide gives a broad view of the elements required to make a comprehensive web application security program. (Page 12).
   
