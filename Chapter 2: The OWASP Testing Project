@@ -47,5 +47,34 @@ For the purpose of this document testing is a process of comparing the state of 
 
 Why Perform Testing?
 
-This document is designed to help organizations understand what compromises a testing program, and to help identify the steps that need to be undertakend to build and operate a testing program on web applications. The guide gives a broad view of the elements required to make a comprehensive web application security program. (Page 12).
-  
+  This document is designed to help organizations understand what compromises a testing program, and to help identify the steps that need to be undertakend to build and operate a testing program on web applications. The guide gives a broad view of the elements required to make a comprehensive web application security program. (Page 12).
+  This guide can be used as a reference guide and as a methodolgy to help determine the gap between existing practices and industry best practices.
+  This guide allows organizations to compare themselves against industry peers, to understand the magnitude of resources required to test and maintain software, or to prepare for an audit. 
+
+When to Test? 
+
+  Most people today don't test software until it has already been created and is in the deployment phase of its life cycle. 
+  This is generally a very ineffective and cost-prohibitive practice. 
+  One of the best methods to prevent security bugs from appearing in production applications is to improve the Software Development Life Cycle (SDLC) by including security in each of its phases.
+  Companies should inspect their overal SDLC to ensure that security is an integral part of the development process.
+
+What to Test?
+
+  It can be helpful to think of software development as a combination of people, process, and technology. 
+  If these are the factors that "create" softwaare, then it is logical that these are teh factors that must be tested. 
+
+  An effective testing program should have components that test: 
+
+    People: to ensure that there is adequate eductation and awareness.
+    Process: to ensure that there are adequate policies and standards and that people know how to follow the policies
+    Technology: to ensure that the process has been effective in its implementation
+
+    Unless a holistic approach is adopted, testing just the technical implementation of an application will not uncover management or operational vulernabilities that could be present.
+    By testing the people, policies and processes, an organization can catchissues that would later manifest themselves into defects in the technology, thus eradicating bugs early and identifying the root causes of defects.
+    Likewise, testing only some of the technical issues that cna be present in a system will result in an incomplete and inaccurate security posture assessment. 
+
+
+Principles of Testing
+
+  There is No Silver Bullet
+    
