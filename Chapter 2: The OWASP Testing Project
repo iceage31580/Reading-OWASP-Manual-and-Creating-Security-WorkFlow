@@ -77,4 +77,9 @@ What to Test?
 Principles of Testing
 
   There is No Silver Bullet
+
+    While it is tempting to think that a security scanner or application firewall will provide many defenses against attack or identify a multitude of problems, in reality there is no silver bullet to the problem of insecure software. 
+    Application security assessment software, while use as a first pass to find low-hanging fruit, is generally immature and ineffective at in-depth asssessments or providing adequate test coevrage. 
+
+    Remember security is a process and not a product. 
     
