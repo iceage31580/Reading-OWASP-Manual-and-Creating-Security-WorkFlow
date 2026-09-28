@@ -82,4 +82,28 @@ Principles of Testing
     Application security assessment software, while use as a first pass to find low-hanging fruit, is generally immature and ineffective at in-depth asssessments or providing adequate test coevrage. 
 
     Remember security is a process and not a product. 
+
+Think Strategically, Not Tactically
+
+  Over the last few years, security professionals have to realize the fallacy of the patch-and-penetrate model that was pervaisve in information security during the 1990's. 
+  The patch-and-penetrate model involves fixing a reported bug, but without proper investigation of the root cause. 
+
+  Vulnerability studies have shown that with the reaction time of attackers worldwide, the typical window of vulnerability does not provide enought time for patch installation, since the time betwen a vulnerability being uncovered and an automated attack against it being developed and released is decreasing every year.
+  There are several incorrect assumptions in the patch-and-penetrate model. 
+  Many users belive that patches intefere with normal operations and might break existing applications. 
+  It is also incorrect to assume that all users are aware of newly released patches. 
+  Consequently not all users of a product will apply patches, either because they think patching may interfere with how the software works or because they lack knowledge abotu the existence of the pathc. 
+  It is essential to build security into the Software Development Life Cycle (SDLC) to prevent reoccuring security problems within an application. 
+  Developers can build security into the SDLC be developing standards, policies, and guidelines that fit and work within the development methodology.
+  Threat modeling and other techniques should be used to help assign appropriate resources to those parts of a system that are most at risk. 
+
+The SDLC is King
+
+  The SDLC is a process that is well-known to developers by integrating security into each phase of the SDLC, it allows for holistic approach to application security that leverages the procedures already in place within the organization. 
+  Be aware that while teh names of the various phases may change depedning on the SDLC model used by an organization, each conceptual phase of the archetype SDLC will be used to develop the application (i.e., define, design, develop, deply, maintain). 
+  Each phase has security considerations that shoudld become part of the existing process, to ensure a cost-effective and comprehensive security program. 
+
+  There are several secure SDLC frameworks that exist that provide both descriptive and prescriptive advice. 
+  Whether a person takes descriptive or prescriptive advice depends on the maturity of the SDLC process. 
+  Essentially, prescriptive adivce shows teh secure SDLC shoudl work, and descriptive advice shows how its used in the real world. 
     
