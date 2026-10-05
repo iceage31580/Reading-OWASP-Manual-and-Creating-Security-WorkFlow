@@ -105,5 +105,14 @@ The SDLC is King
 
   There are several secure SDLC frameworks that exist that provide both descriptive and prescriptive advice. 
   Whether a person takes descriptive or prescriptive advice depends on the maturity of the SDLC process. 
-  Essentially, prescriptive adivce shows teh secure SDLC shoudl work, and descriptive advice shows how its used in the real world. 
+  Essentially, prescriptive adivce shows the secure SDLC should work, and descriptive advice shows how its used in the real world. 
+
+  Both have their place. For example, if you don't know where to start, a prescriptive framework can provide a menu of potential security controls that can be applied within the SDLC. 
+  Descriptive advice can then help drive the decision process by presenting what has worked well for other organizations 
+  Descriptive secure SDLCs include BSIMM-V; and teh prescriptive secure SDLCs include OWASP's Open Software Assurance Maturity Model (OpenSAMM) and ISO/IEC 27034 parts 1-8, parts of which are still in development.
+
+Test Early and Test Often
+
+  When a bug is detected within the SDLC it can be addressed faster and at a lower cost. 
+  A security bug is no different from a functiona or performance-based bug in this regard. (Page 12). 
     
