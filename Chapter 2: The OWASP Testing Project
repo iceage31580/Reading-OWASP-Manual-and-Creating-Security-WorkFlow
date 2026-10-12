@@ -115,4 +115,34 @@ Test Early and Test Often
 
   When a bug is detected within the SDLC it can be addressed faster and at a lower cost. 
   A security bug is no different from a functiona or performance-based bug in this regard. (Page 12). 
-    
+  A key step in making this possible is to educate the development and QA teams about commonsecurity issues and the ways to detect and prevent them. 
+  Although new libraries, tools, or languages can help design better programs (with fewer security bugs), new threats arise constantly and developers must be aware of the threats that affect the software they are developing. 
+  Education in security testing also helps developers acquire the appropriate mindset to test an application from an attacker's perspective. 
+  This allowws each organization to consider security issues as part of their existing responsibilities. 
+
+Understand the Scope of Security
+
+  It is important to know how much security a given project will require. 
+  The information and assets that are to be protected should be given a classification that states how they are to be handled (e.g., Confidential, Secret, Top Secret).
+  Discussions should occur with legal council to ensure that any specific security requirements will be met. 
+  In the USA requirements might come from federal regulations, such as the Gramm-Leach-Bliley Act, or from state laws, such as the California SB-1386. 
+  For organizations based in EU countries, both country-specific regulation and EU Directives may apply. 
+  For example, Directive 96/46/EC4 makes it mandatory to treat personal data in applications with due care, whatever the application. 
+
+Develop the Right Mindset
+
+  Sucessfully testing an application for security vulnerabilities requires thinking "outside the box". 
+  Normal use cases will test the normal behavior of the application when a user is using it in the manner that is expected.
+  Good security testing requires going beyond what is expected and thinking like an attacker who is trying to break the application. 
+  Creative thinking can help determine what unexpected data may cause an application to fail in an insecure  manner. 
+  It can also help find what assumptions made by web developers are not always true and how they can be subverted.
+  One of the reasons why automated tools are actually bad at automatically testing for vulnerabilities is that this creative thinking must be done on a case-by-case basis as most web applications are being developed in a unique way(even when using common frameworks). 
+
+Understand the Subject
+
+  One of the first major intitiatives in any good security program should be to require accurate documentation of the application. 
+  The architecture, data-flow diagrams, use cases, etc, should be written in formal documents and made available for review. 
+  The technical specification and application documents should include information that lists not only the desired use cases, but also any spefically disallowed use case. 
+  Finally, it is good to have at least a basic security infrastructure that allows monitoring and trending of attacks against an organization's applications and network(e.g. IDS systems). 
+
+
