@@ -145,4 +145,56 @@ Understand the Subject
   The technical specification and application documents should include information that lists not only the desired use cases, but also any spefically disallowed use case. 
   Finally, it is good to have at least a basic security infrastructure that allows monitoring and trending of attacks against an organization's applications and network(e.g. IDS systems). 
 
+Use the Right Tools
+
+  While we have already stated that there is no silver bullet, tools do play a critical role in the overall security program.
+  There is a range of open source and commercial tools that can automate many routine security tasks.
+  These tools can simplofy and speed up the security process by assisting security personel in their tasks. 
+  However, it is important to understand exactly what these tools can and cannot do so that they are not oversold or used incorrectly. 
+
+The Devil is in the Details
+
+  It is critical not to perform a superficial security review of an application and consider it complete. 
+  This will instill a false sense of confidence that can be as dangerous as not having done a security review in the first place. 
+  It is vital to carefully review the findings and weed out any false positive that may remain in the report.
+  Reporting an incorrect seucrity finding can often undermine the valid message of the rest of a security report.
+  Care should be taken to verify that every possible section of application logic has been tested, and that every use case scenario was explored for possible vulnerabilities. 
+
+Use Source Code When Availalbe 
+
+  While black box penetration testing can be impressive and useful to demonstrate how vulnerabilities are exposed in a production environment, they are not the most effective efficient way to secure an application. 
+  It is difficult for dynamic testing to test the entire code base, particularly if many nested conditional statements exist. 
+  If the source for the application is available, it should be given to the security staff to assist them while performing their reivew. 
+  It is possible to discover vulernabilities within the application source that would be missed during the black box engagement. 
+
+Develop Metrics
+
+  An important part of a good security program is teh ability to determine if things are getting better. 
+  It is important to track teh result of testing engagement, and develop metrics that will reveal the application security trends within the organization. 
+
+  Good Metrics will show: 
+
+    If more education and training are required
+    If there is a particular security mechanism that is not clearly understood by the development team
+    If the total number of security related problems are being found each month is going down
+
+  Constant metrics that can be generated in an automated way from available source code will also help the organization in assessing the effectivness of mechanisms introduced to reduce security bugs in softwaare development. 
+  Metrics are not easily developed, os using standard metrics like those provided by the OWASP Metrics project and other organizations is a good stating point. 
+
+Document the Test Results 
+
+  To conclude the testing process, it is important to produce a formal recordin of what testing actions were taken, by whom, when they were performed, and details of the test findings. 
+  It is wise to agree on an acceptable format for the report which is usefule to all concerned parties, which may include developers, project management, business owners, and IT department, audit, and compliance. 
+
+  The report should be clear to the business owner in identifying where material risks exist and sufficient to get their back for subsequent mitigation actions. 
+  The report should also be clear to the developer in pin-pointing the exact function that is affected by the vulnerability and associated reccoomendations for resolving issues in a language that the developer will understand. 
+  The report should allow another security tester to reproduce results. 
+  Writing the report should not be overly burdensome on the security tester themesvles. 
+  Security testers are not generally reknowned for their creative writing skills and agreeing on a complex report can lead to isntanced where test results do not get properly documented.
+  Using a security test report template can save time and ensure results are documented accurately and consistently, and are in a format that is suitable for the audience. 
+
+
+Testing Techniques Explained - Page 13 
+
+
 
