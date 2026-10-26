@@ -196,5 +196,61 @@ Document the Test Results
 
 Testing Techniques Explained - Page 13 
 
+  This section presents a high-level overview of various testing techniques taht can be employed when building a testing program. 
+  It does not present specific methodologies for these techniques. 
+  This section is included to provide context for the frameowrk presented in the next chapter and to highlight the advantages and disadvantages of some of the techniques that should be considered. 
+
+  In particular, we will cover, 
+
+    Manual Inspections & Reviews
+    Threat Modeling
+    Code Review
+    Penetration Testing 
+
+Manual Inspection & Reviews
+ Overview
+
+  Manual inspections are human reviews that typically test the security implications of people, policies, and processes.
+  Manual inspections can also include inspection of technology decisions such as architectural designs.
+  They are usually conducted by analyzing documentation or performing interviews with the designers or system owners. 
+
+  While the concept of manual inspections and human reviews is simple, they can be among the most powerful and effective techniques availalbe. 
+  By asking someone how something works and why it waas implemented in a specific way, the tester can quickly determine if any security concerns are likely to be evident. 
+  Manual inspection and reviews are one of the few ways to test the software development life-cycle processes itself and to ensure that there is adequate policy or skill in place. 
+
+  As with many things in life, when conducting manual inspections and reviews it is recommended that a trust-but-verify model is adopted. 
+  Not everything that the tester is shown or told will be accurate. 
+  Manual reviews are particularly good for testing whether people understand the security process, have been made aware of policy, and have the appropriate skills to design or implement a secure application. 
+
+Advantages
+ Requires no supporting technology
+ Can be applied to a variety of situations
+ Flexible
+ Promotes teamwork
+ Early in the SDLC
+
+Disadvantages
+ Can be time consuming
+ Supporting material not always available
+ Requires significant human thought and skill to be effective 
+
+Threat Modeling 
+ Overview
+
+  Threat modeling has become a popular technique to help the system designers think about the security threats that their systems and applications might face. 
+  Therefore, threat modeling can be seen as risk assessment for applications. 
+  In fact, it enables the designer to develop mitigation strategies for potential vulnerabilities and helps them focus their inevitably limited resources and attention on the parts of the system that most require it. 
+  It is reccomended that all applications have a threat model developed and documented. 
+  Threat models should be created as early as possible in the SDLC, and should be revisted as the application evolves and development progresses. 
+
+  To develop a threat model, we recommend taking a simple approach that follows the NIST 800-30 standard for risk assessment. 
+  This approach involves: 
+    Decomposing the application - uses a process of manual inspection to understand how the application works, its assets, functionality, and connectivity
+    Defining and classifying the assets - classify the assets into tangible and intangible assets and rank them according to business importance
+    Exploring potential vulnerabilities - whether technical, operational, or mangement
+    Exploring potential therats - develop a realistic view of potential attack vectors form an attacker's perspective by using threat scenarios or attack trees. 
+  
+
+  
 
 
