@@ -249,8 +249,49 @@ Threat Modeling
     Defining and classifying the assets - classify the assets into tangible and intangible assets and rank them according to business importance
     Exploring potential vulnerabilities - whether technical, operational, or mangement
     Exploring potential therats - develop a realistic view of potential attack vectors form an attacker's perspective by using threat scenarios or attack trees. 
-  
+    Creating mitigation strategies - developing mitigating controls for each of the threats deemed to be realistic
 
-  
+  The output from a threat model itself can vary but is typically a collection of lists and diagrams. 
+  The OWASP Code Review Guide outlines an Application Threat Modeling methology that can be used as a reference for teh testing applications for potential security flaws in the design of the application. 
+  There is no right or wrong way to develop threat models and perform information risk assesements on applications. 
+
+Advantages
+  Pratical attacker's view of the system
+  Flexible 
+  Early in the SDLC
+
+Disavantages
+  Relatively new technique
+  Good threat models don't automatically mean good software
+
+Source Code Review
+ Overview
+
+  Source code review is the process of manually checking the source code of a web application for security issues. 
+  Many serious security vulnerabilities cannot be detected with any other form of analysis or testing. 
+  As the popular saying goes "if you want to know what's really going on, go straight to the source". 
+  Almost all security experts agree that there is no substitute for actually looking at the code. 
+  All the information for identifying security problems is there in the code somewhere. 
+  Unlike testing third party closed software like operating systems, when testing web applications (especially of they have been developed in-house) the source code should be made available for testing purposes. 
+
+  Many unintentional but significant security problems are also extremely difficult to discover with other forms of analysis or testing, such as penetration testing, making source code analysis the technique of choice for technical testing. 
+  With the source code, a tester can accurately determine what is happening (or is supposed to be happening) and remove the guess work of black box testing. 
+
+  Examples of issues that are particularly conducive to being found trhough source code reviews include concurrency problems, flawed business logic, access control problems, and cryptographic weaknesses as well as backdoors, Trojans, Easter eggs, time bombs, logic bombs, and other forms of malicous code. 
+  These issues manifest themselves as the most harmful vulnerabilities in web sites. 
+  Source code analysis can be extremely efficient to find implementation issues such as places where input validation was not performed or when fail open control procedures may be present. 
+  But keep in mind that operational procedures need to be reviewed as well, since the source code being deployed might not be the same as the one being analyzed herein. 
+
+Advantages
+  Completeness and effectiveness
+  Accuracy
+  Fast (for competent reviewers)
+
+Disadvantages
+  Requires highly skilled security developers
+  Can miss issues in compiled libraries
+  Cannot detect run-time errors easily 
+  The source code actually deployed might differ from the one being analyzed. 
 
 
+Penetration Testing 
