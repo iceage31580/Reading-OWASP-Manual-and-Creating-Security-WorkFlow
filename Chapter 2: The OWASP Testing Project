@@ -295,3 +295,56 @@ Disadvantages
 
 
 Penetration Testing 
+Overview 
+
+  Pentration testing has been a common technique used to test network security for many years. 
+  It is also commonly known as black box testing or ethical hacking.
+  Pentration testing is essentially the " art " of testing a running application remotely to find security vulnerabilities, without knowing the inner workings of the application itself. 
+  Typically, the pentration test team would have to an application as if they were users. 
+  The tester acts like an attacker and attempts to find and exploit vulnerabilities. 
+  In many cases the tester will be given a valid account on the system. 
+
+  While pentration teting has proven to be effective in network security, the technique does not naturally to applications. 
+  When penetration testing is performed on networks and operating systems, the majority of the work is involved in finding and then exploiting known vulnerabilities in specific technologies. 
+  As web applications are almost exclusively bespoke, penetration testing in the web application arena is more akin to pure research. 
+  Penetration testing tools have been developed that automate the process, but with the nature of web applications their effectiveness is usually poor. 
+
+  Many people today use web application penetration testing as their primary security testing technique. 
+  Whilst it certainly has it's place in a testing program, we do not believe it should be considered as the primary or only testing technique. 
+  Garry McGraw summed up penetration testing well when he said, "If you fail a penetration test you know you have a very bad problem indeed. If you pass a penetration test you do not know ythat you don't have a very bad problem."
+  However, focused penetration testing (i.e. testing that attempts to exploit known vulnerabilities detected in previous reviews) can be useful in detectingif some specific vulnerabilities are actually fixed in the source code deployed on the web site. 
+
+Advantages
+
+  Can be fast (and therefore cheap)
+  Requires a relatively lower skill-set than source code review
+  Tests the code that is actually being exposed
+
+Disadvantages 
+
+  Too late in the SDLC
+  Front impacting testing only
+
+The Need for a Balanced Approach 
+
+
+  With so many techniques and approaches to testing the security of web applications it can be difficult to understand which techniques to use and when to use them. 
+  Experience shows that there is no right or wrong answer to the question of exactly what techniques should be used to build a testing framework. 
+  In fact all techniques should probably be used to test all the areas that need to be tested. 
+
+  Although it is clear that there is no single technique that can be performed to effectively cover all security testing and ensure that all issues have been addressed, many companies adopt only one approach. 
+  The approach uesed has historically been penetration testing. 
+  Penetration testing while useful cannot effectively address many of the issues that need to be tested. 
+  It is simply "too little too late" in the software development cycle (SDLC). 
+
+  The correct approach is a balanced approach that includes several techniques, from manual reviews to technical testing. 
+  A balanced approach should cover testing all phases of the SDLC. 
+  This approach leverages, the most appropriate techniques available depending on the current SDLC phase. 
+
+  Of course there are times and circumstances where only technique is possible. 
+  For example, a test on a web application that has already been created, but where the testing party does not have access to the source code. 
+  In this case, penetration testing is clearly better than no testing at all. 
+  However, the testing parties should be encouraged to challenge assumptions, such as no access to source code, and to explore the possbility of more complete testing. 
+
+
+  A balanced appriach varies depending on many factors such as maturity of (Page 14).
