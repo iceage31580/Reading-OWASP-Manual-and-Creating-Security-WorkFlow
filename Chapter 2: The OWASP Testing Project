@@ -347,4 +347,113 @@ The Need for a Balanced Approach
   However, the testing parties should be encouraged to challenge assumptions, such as no access to source code, and to explore the possbility of more complete testing. 
 
 
-  A balanced appriach varies depending on many factors such as maturity of (Page 14).
+  A balanced appriach varies depending on many factors such as maturity of the testing process and corporate culture. (Page 14).
+
+Proportions of Test Effort in SDLC
+
+Define: 10% - 35%
+Design: 15% - 35%
+Develop: 12% - 25%
+Deploy: 10% - 15%
+Maintain: 10% - 15%
+
+Proportion of Test Effort According to Test Technique
+
+Process Reviews & Manual Inpsections 
+Code Review
+Security Testing
+
+A Note about Web Application Scanners
+
+  Many organizations have started to use web application scanners. 
+  While they undoubtedly have a place in a testing program, some fundamental issues need to be highlighted about why it is believed that automating black box testing is not (or will ever be) effective. 
+  However, highlighting these issues should not discourage the use of web application scanners.   
+  Rather, the aim is to ensure the limitations are understood and testing frameworks are planned appropriately. 
+
+  Important: OWASP is currently working to develop a web application scanner bench marking platform. 
+  The following examples show why automated black box testing is not effective. 
+
+'Example 1: Magic Parameters'
+
+Imagine a simple web application that accepts a name-value pair of 'magic' and then the value. 
+For simplicity, the GET request may be: 
+
+  http://www.host/application?magic=value
+
+To further simply the example, the values in this case can only be ASCII characters a-z (upper or lowercase) and integers 0 - 9. 
+The designers of this application created an administrative backdoor during testing, but obfuscated it to prevent the casual observer from discovering it. 
+By submitting the value  sf8g7sfjdsurtsdieerwqredsgnfg8d (30 characters), the user will then be logged in and presented with an administrative screen with total control of the application. 
+The HTTP request is now: 
+
+  http://www.host/application?magic= sf8g7sfjdsurtsdieerwqredsgnfg8d
+
+Given that all of the other parameters were simple two- and three- character fields, it is not possible to start guessing combinations at approximately 28 characters. 
+A web application scanner will need to bruteforce  (or guess) the entire key space of 30 characters. 
+That is 30^28 permutations, or trillions of HTTP requests. 
+That is an electron in a digital haystack. 
+
+The code for this exemplar Magic Parameter check may look like the following: 
+
+public void doPost( HttpServletRequest request, HttpServletResponse response)
+{
+String magic = “sf8g7sfjdsurtsdieerwqredsgnfg8d”;
+boolean admin = magic.equals( request.getParameter(“magic”));
+if (admin) doAdmin( request, response);
+else …. // normal processing
+}
+
+By looking in the code, the vulnerability practically leaps off the page as a potential problem. 
+
+'Example 2: Bad Cryptography'
+
+  Cryptography is widely used in web applications. 
+  Imagine thaat a developer decided to write a simple cryptography algorithm to sign a user in from site A to site B automatically. 
+  In his/her wisdom, the developer decides that is a user is logged into site A, then he/she will generate a key using an MD5 hash function that compromises: HASH { username:date }
+
+  When a user is passed to site B, he/she will send the key on the query string to site B in an HTTP redirect. 
+  Site B independently computes the hash,  and compares it to the hash passed on the request. 
+  If they match, site B signs the user in as they claim to be. 
+
+  As the scheme is explained the inadequacies can be worked out. 
+  Anyone that figures out the scheme (or is told how it works, or downloads the information from Bugtraq) can login as any user. 
+  Manual inpsection, such as review or code inspection would have uncovered this security issues quickly. 
+  A black box application scanner would not have uncovered this vulerability. 
+  It would have seena 128-bit hash that changed with each user, and by the nautre of hash functions, did not change in any predictable way. 
+
+A Note about Static Source Code Review tools 
+
+  Many organizations have started to use static source code scanner. 
+  Whle they undoubtedly have a place (Page 16) 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
